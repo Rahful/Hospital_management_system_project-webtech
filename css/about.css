@@ -1,0 +1,76 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #42f59a;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #bce3e1;
+}
+
+
+
+body {
+	
+	/*background-image: url("images/hospital.jpg");*/
+	background-color:#45f7bc;
+}
+
+
+.description {
+  text-align: justify;
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  right: 600px;
+}
+
+.video {
+  max-width: 100%;
+  height: auto;
+
+  position: absolute;
+  
+  right: 10px;
+  top: 60px;
+} 
+/* Fixed Bar */
+.fixedBar {
+  font-size: 20px;
+  font-color: red;
+  height: 30px;
+  background-color: lightgreen;
+  left: 300px;
+  top: 585px;
+  position: fixed;
+
+}
+/*
+.video {
+  position: relative;
+  padding-bottom: 20.25%;
+  background: black;
+}
+
+.video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+*/
+

@@ -1,0 +1,172 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #40f59a;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #bce3e1;
+}
+
+
+
+body {
+  
+  /*background-image: url("images/hospital.jpg");*/
+  background-color:#45f7bc;
+}
+
+
+.la {
+  color: black;
+  width: 205px;
+  font-size: 35px;
+
+  position: absolute;
+  left: 550px;
+  top: 100px;
+  
+}
+
+/* login as admin */
+/*
+.laa{
+  cursor: pointer;
+  color: black;
+  font-size: 30px;
+
+  position: absolute;
+  left: 360px;
+  top: 500px;
+}
+*/
+/* login as doctor */
+/*
+.lad{
+  cursor: pointer;
+  color: black;
+  font-size: 30px;
+
+  position: absolute;
+  left: 610px;
+  top: 500px;
+}
+*/
+/* login as patient */
+/*
+.lap{
+  cursor: pointer;
+  color: black;
+  font-size: 30px;
+
+  position: absolute;
+  left: 860px;
+  top: 500px;
+}
+*/
+
+
+/* Back */
+/*
+.back{
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  left: 1310px;
+  top: 585px;
+}
+*/
+/* Home */
+/*
+.home{
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  left: 20px;
+  top: 585px;
+}*/
+
+/*images*/
+
+/* Doctor Image */
+.ai{
+  position: absolute;
+  top:340px;
+  left: 310px;
+}
+/* Doctor Image */
+.di{
+  position: absolute;
+  top:340px;
+  left: 570px;
+}
+/* Patient Image */
+.pi{
+  position: absolute;
+  top:340px;
+  left: 820px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Not use */
+/*
+.dropbtn {
+  background-color: #92e0c9;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #08d18e;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8ef5c1;
+  min-width: 160px;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+*/
+
