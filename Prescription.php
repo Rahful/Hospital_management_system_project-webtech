@@ -1,11 +1,13 @@
 <?php
-         $name="";
-         $err_name="";
-
+        $name="";
+        $err_name="";
+		
         $mail="";
         $err_mail="";
+		
         $phone="";
         $err_phone="";
+		
         $code="";
         $err_code="";
 
@@ -30,16 +32,22 @@
 
         $gender="";
         $err_gender="";
+		
+		$Medicine="";
+		$err_Medicine="";
+		
+		$Diseases="";
+		$err_Diseases="";
        
         $hear="";
         $err_hear="";
         
         $bio="";
-        $err_bio="";
+        $err_Rx="";
 
         if($_SERVER["REQUEST_METHOD"]=="POST"){
             if(empty($_POST["name"])){
-                $err_name="Name required";
+                $err_name="Name required!";
             }
             else if(strlen($_POST["name"]) < 6){
                 $err_name="Name must be more than 6 characters long";
@@ -52,16 +60,22 @@
                 $name=htmlspecialchars($_POST["name"]);
 
             }
-            if(empty($_POST["mail"])){
+            function ValidateEmail($email){
+				$pos_at =strpos($email,"@");
+				$pos_dot =strpos ($email,".",$pos_at+1);
+				if($pos_at < $pos_dot){
+					return true;
+				}
+				return false;
+			}
+			
+
+           if(empty($_POST["mail"])){
                 $err_mail="E-mail required";
             }
-            else if(!strpos($_POST["mail"],"@")){
-                $err_mail="Must contain @";
-            }
-            else{   
-                $name=htmlspecialchars($_POST["mail"]);
-
-            }
+            else if(!ValidateEmail($_POST["mail"])){
+				$err_mail="Not a Valid email";
+			}
 
 
             if(empty($_POST["city"])|| empty($_POST["state"])||empty($_POST["zip"] )){
@@ -93,7 +107,22 @@
             else{
                 $gender=$_POST["gender"];
             }
+			if(empty($_POST["Medicine"])){
+                $err_Medicine="Medicine Name required!";
+            }
 
+            else{   
+                $Medicine=htmlspecialchars($_POST["Medicine"]);
+
+            }
+			if(empty($_POST["Diseases"])){
+                $err_Diseases="Diseases Name required!";
+            }
+
+            else{   
+                $Diseases=htmlspecialchars($_POST["Diseases"]);
+
+            }
 
             if(empty($_POST["date"])){
                 $err_date="Date must be selected";
@@ -127,7 +156,7 @@
 
 
             if(empty($_POST["text"])){
-                $err_bio="Rx should not be empty";
+                $err_Rx="Should not be empty";
             }
             else{
                 $bio=htmlspecialchars($_POST["text"]);
@@ -148,7 +177,7 @@
                 <table>
                     <tr>
                         <td><span><b>Patient Name</b></span></td>
-                        <td>: <input type="text" name="name" placeholder ="Name">
+                        <td>: <input type="text" name="name" placeholder ="PatientName">
                             <span><?php echo $err_name;?></span></td>
                     </tr>
                     <tr>
@@ -218,7 +247,13 @@
                     </tr>
                     <tr>
                         <td><span><b>Medicine Name</b></span></td>
-                        <td>: <input type="text" name="name" placeholder ="Medicine Name">
+                        <td>: <input type="text" name="Medicine" placeholder ="Medicine Name">
+						<span><?php echo $err_Medicine;?></span></td>
+                    </tr>
+					<tr>
+                        <td><span><b>Diseases Name</b></span></td>
+                        <td>: <input type="text" name="Diseases" placeholder ="Dedicine Name">
+						<span><?php echo $err_Diseases;?></span></td>
                     </tr>
                     <tr>
                         <td><span><b>Medicine Dose ?</b></span></td>
@@ -236,13 +271,13 @@
                         </select>
                     
                     <tr>
-                        <td><span><b>Rx.</b></span></td>
+                        <td><span><b>ADDITIONAL INSTRUCTIONS</b></span></td>
                         <td>: <textarea name="text"></textarea><br>
-						<span><?php echo $err_bio;?></span></td>
+						<span><?php echo $err_Rx;?></span></td>
 						</tr>
 						<br>
 			<tr>
-				<td><td><input type="submit" name="Register" value="Register"></td></td>
+				<td><td><input type="submit" name="Register" value="SUBMIT"></td></td>
 			</tr>
 
                 </table>
