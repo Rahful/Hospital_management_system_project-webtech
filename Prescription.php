@@ -172,7 +172,7 @@
 <body>
 
         <fieldset>
-            <legend><h1>Dhaka Medical College Hospital Prescription</h1></legend>
+            <legend><h1>Prescription</h1></legend>
             <form action="" method="post">
                 <table>
                     <tr>

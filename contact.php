@@ -1,16 +1,16 @@
 <html>
 	<head>
 		<title>Contact | Dhaka Medical College Hospital</title>
-		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="styles/index.css">
 		<link rel="shortcut icon" href="images/hospitalicon3.JPG">
 	</head>
 	
 	<body>
 		<ul>
 		  <li><a href="index.html">Home</a></li>
-		  <li><a href="about.html">About</a></li>
-		  <li><a href="contact.html">Contact</a></li>
-		  <li style="float:right"><a class="active" href="login.html">Login</a></li>
+		  <li><a href="about.php">About</a></li>
+		  <li><a href="contact.php">Contact</a></li>
+		  <li style="float:right"><a class="active" href="login.php">Login</a></li>
 		</ul>
 		
 		<div>
