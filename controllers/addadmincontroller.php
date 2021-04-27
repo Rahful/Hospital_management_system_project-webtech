@@ -15,7 +15,7 @@
     $hasError = false;
 
     function validatePassword($pass)
-{
+    {
     $hasUpper = false;
     $hasLower = false;
     for ($i = 0; $i < strlen($pass); $i++) {

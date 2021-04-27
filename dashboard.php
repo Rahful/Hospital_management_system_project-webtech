@@ -42,7 +42,7 @@ include 'Admin_header.php';
 					echo "<td>".$users["name"]."</td>";
 					echo "<td>".$users["username"]."</td>";
 					echo "<td>".$users["email"]."</td>";
-					echo '<td><a href="#" class="edit">Edit</a></td>';
+					echo '<td><a href="editusers.php?id='.$users["id"].'" class="edit">Edit</a></td>';
 					echo '<td><a href="controllers/usersdelete.php?id='.$users["id"].'" class="delete">Delete</a></td>';
 					echo "</tr>";
 				}

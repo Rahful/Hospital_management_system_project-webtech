@@ -50,7 +50,7 @@
 					echo "<td>".$doctor["gender"]."</td>";
 					echo "<td>".$doctor["specialized"]."</td>";
 					echo "<td>".$doctor["schedule"]."</td>";
-					echo '<td><a href="#" class="edit">Edit</a></td>';
+					echo '<td><a href="editdoctor.php?id='.$doctor["id"].'" class="edit">Edit</a></td>';
 					echo '<td><a href="controllers/doctordelete.php?id='.$doctor["id"].'" class="delete">Delete</a></td>';
 					echo "</tr>";
 				}

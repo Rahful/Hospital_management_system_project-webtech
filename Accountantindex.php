@@ -43,7 +43,7 @@
 					echo "<td>".$accountant["phone"]."</td>";
 					echo "<td>".$accountant["email"]."</td>";
 					echo "<td>".$accountant["gender"]."</td>";
-					echo '<td><a href="#" class="edit">Edit</a></td>';
+					echo '<td><a href="editaccountant.php?id='.$accountant["id"].'" class="edit">Edit</a></td>';
 					echo '<td><a href="controllers/accountantdelete.php?id='.$accountant["id"].'" class="delete">Delete</a></td>';
 					echo "</tr>";
 				}

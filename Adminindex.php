@@ -45,7 +45,7 @@
 					echo "<td>".$admin["phone"]."</td>";
 					echo "<td>".$admin["email"]."</td>";
 					echo "<td>".$admin["gender"]."</td>";
-					echo '<td><a href="#" class="edit">Edit</a></td>';
+					echo '<td><a href="editadmin.php?id='.$admin["id"].'" class="edit">Edit</a></td>';
 					echo '<td><a href="controllers/admindelete.php?id='.$admin["id"].'" class="delete">Delete</a></td>';
 					echo "</tr>";
 				}

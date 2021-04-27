@@ -21,12 +21,6 @@
 		$result = get($query);
 		return $result;
 	}
-	function getadmin($id){
-		$query = "SELECT * FROM admin WHERE id=$id";
-		$result = get($query);
-		if(count($result) > 0){
-			return $result[0];
-		}
-		return false;
-	}
+	
+	
 ?>
