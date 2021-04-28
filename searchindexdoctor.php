@@ -24,6 +24,7 @@ $output .='<h4 align="center" >Search result</h4>';
 $output .='
                 <table>
                 <thead>
+				<th>SN</th>
                 <th>Username</th>
                 <th>Phone</th>
                 <th>Email</th>
@@ -33,7 +34,7 @@ $output .='
     while($row=$result->fetch_assoc()){
         $output .= '<tbody>
                           <tr>
-                            
+                            <td>'. $row['id'].'</td>
                             <td>'. $row['username'].'</td>
                             <td>'. $row['phone'].'</td>
                             <td>'. $row['email'].'</td>
