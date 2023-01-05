@@ -39,3 +39,5 @@ Hurray! That's it!<br>
 XAMPP v3.2.4
 Visual Studio Code v1.55 was used as a text editor.<br>
 Google Chrome Version 77.0.3865.90 was used to run the project<br>
+# Database:
+![hms](https://user-images.githubusercontent.com/40945872/116263647-5acbb080-a79b-11eb-9994-625dd254fe2d.JPG)
